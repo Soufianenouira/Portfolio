@@ -1,0 +1,113 @@
+section {
+    display: flex;
+    justify-content: center;
+    padding: 234px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    max-width: 1440px;
+    position: relative;
+}
+
+.lets-work-together {
+    width: 45%;
+
+    >h3 {
+        color: #3DCFB6;
+        font-family: "karla";
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 1px;
+        margin-bottom: 20px;
+    }
+
+    >b {
+        color: #3DCFB6;
+        font-size: 64px;
+        font-family: "fira code";
+        font-weight: 700;
+    }
+}
+
+.contact-infos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >p{
+        width: 100%;
+        font-family: "karla";
+        font-size: 15px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        >span{
+            color: #3DCFB6;
+            &:hover{
+                text-decoration: underline;
+                text-decoration-color: #3DCFB6;
+                color: white;
+            }
+        }
+    }
+    
+}
+
+.checkbox{
+    width: 18px;
+    height: 18px;
+    color: #3dcfb79d;
+}
+
+
+
+.infos{
+    border-top: solid 1px #3dcfb79d;
+    border-bottom: solid 1px #3dcfb79c;
+    padding: 32px 0 32px 32px;
+    width: 100%;
+    >span{
+        color: red;
+    }
+    &:hover{
+        border-top: solid 2px #3DCFB6;
+        border-bottom: solid 2px #3DCFB6;
+    }
+    >h3{
+        color:  #3DCFB6;
+        font-family: "fira code";
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 1px;
+        margin-bottom: 20px;
+    }
+
+    >input{
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+        font-family: "karla";
+        font-size: 18px;
+        font-weight: 400;
+        &:focus{
+            outline: none;
+            background-color: transparent;
+        }
+    }
+
+    >textarea{
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+        font-family: "karla";
+        font-size: 18px;
+        font-weight: 400;
+        &:focus{
+            outline: none;
+            background-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+section{
+    display: flex;
+    justify-content: center;
+    padding: 144px 0;
+}
+
+.content{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    >img{
+        width: 45%;
+        border-radius: 30px;
+        padding-bottom: 45%;
+    }
+}
+
+.who-i-am{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    >h3{
+        color:  #3DCFB6;
+        font-family: "karla";
+        font-size: clamp(10px, 2vw, 24px);
+        font-weight: 700;
+        margin-top: 1px;
+        margin-bottom: 20px;
+    }
+}
+
+.about-me{
+    border: solid 1px  #3DCFB6;
+    border-radius: 30px;
+    background-color: #3dcfb737;
+    padding: 32px;
+    >b{
+        color: #3DCFB6;
+        font-size: clamp(10px, 3vw, 64px);
+        font-family: "fira code";
+        font-weight: 700;
+    }
+    >p{
+        display: flex;
+        align-items: flex-start;
+        font-size: clamp(10px, 2vw, 18px);
+        font-family: "karla";
+        font-weight: 400;
+        >img{
+            margin-right: 5px;
+        }
+    }
+}

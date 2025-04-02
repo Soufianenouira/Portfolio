@@ -1,0 +1,34 @@
+<section>
+    
+    <div class="content">
+        <h3>Protfolio</h3>
+        <b>Featured Projects</b>
+        <p>Explor a selection of my work here - Interact with projects to see my skills in action</p>
+        <div class="projects">
+            <div class="project-info">
+                @for(project of projects; track project.name; let index = $index){
+                <div class="project" (mouseover)="over(project.img, index)" (mouseout)="out()" (click)="showProject(project.name)">
+                    <div class="project-name">
+                        <p >{{project.name}}</p>
+                        <img src="/assets/img/arrow_outward.png" [ngStyle]="{'display': index == 0 ? joinArrow : index == 1 ? pocoLocoArrow :  daBubbleArrow}">
+                    </div>
+                    <div class="tools">
+                        <table>
+                            <tr>
+                                @for(tool of project.usedTools; track projects){
+                                <td>
+                                    <p class="tool">{{tool}}</p>
+                                </td>
+                                }
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                }
+            </div>
+            <div class="project-imgs" [ngStyle]="{ 'display': displayStyle, 'align-items': alignment }">
+                <img src="{{projectImage}}" alt="">
+            </div>
+        </div>
+    </div>
+</section>

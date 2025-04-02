@@ -1,0 +1,72 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #1c1c1c, #08463b4f);
+    padding-bottom: 144px;
+}
+
+.content{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.skills-icons{
+    width: 48.9%;
+    height: 428px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 71px;
+    >img{
+        width: 60px;
+        height: 60px;
+    }
+
+    >div{
+        gap: 8px;
+    }
+}
+
+.technologies{
+    width: 36.1%;
+    >h3{
+        color:  #3DCFB6;
+        font-family: "karla";
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 1px;
+        margin-bottom: 20px;
+    }
+
+    >div{
+        border: solid 1px  #3DCFB6;
+        border-radius: 30px;
+        background-color: #3dcfb737;
+        padding: 32px;
+        >p{
+            font-family: "karla";
+            font-size: clamp(10px, 1.5vw, 18px);
+            font-weight: 400;
+        }
+    }
+}
+
+.skill-set-title{
+    color: #3DCFB6;
+    font-size: clamp(10px, 5vw, 64px);
+    font-family: "fira code";
+    font-weight: 700;
+}
+
+.another-skill{
+    color:  white;
+    font-family: "fira code";
+    font-size: 24px;
+    font-weight: 700;
+    >span{
+        color:  #3DCFB6;
+    }
+}

@@ -1,0 +1,72 @@
+import { CommonModule } from '@angular/common';
+import { Component, Output, EventEmitter, Input} from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+@Component({
+  selector: 'app-portfolio',
+  standalone: true,
+  imports: [FormsModule, CommonModule],
+  templateUrl: './portfolio.component.html',
+  styleUrl: './portfolio.component.scss'
+})
+export class PortfolioComponent {
+  projects = [
+    {
+      "name": "Join",
+      "usedTools": ['Anguler', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
+      "img": "/assets/img/Group21.png",
+      "link": "...."
+    },
+    {
+      "name": "El Poco Loco",
+      "usedTools": ['HTML', 'CSS', 'JavaScript'],
+      "img": "/assets/img/Group22.png",
+      "link": "...."
+    },
+    {
+      "name": "DA Bubble",
+      "usedTools": ['Anguler', 'Firebase', 'TypeScript'],
+      "img": "/assets/img/Group23.png",
+      "link": "...."
+    }
+
+  ];
+
+  projectImage: string = "/assets/img/Group21.png";
+  alignment: string = "flex-start"
+  displayStyle: string = "none";
+  daBubbleArrow: string = "none";
+  pocoLocoArrow: string = "none";
+  joinArrow: string = "none";
+
+  over(path:string, index:number){
+    this.projectImage = path;
+    this.displayStyle = "flex";
+    if(index == 0){
+      this.alignment = "flex-start";
+      this.joinArrow = "flex";
+    }else if (index == 1){
+      this.alignment = "center";
+      this.pocoLocoArrow = "flex";
+    }else if (index == 2){
+      this.alignment = "flex-end";
+      this.daBubbleArrow = "flex";
+    }
+    
+  }
+
+  out(){
+    this.displayStyle = "none";
+    this.joinArrow = "none";
+    this.pocoLocoArrow = "none";
+    this.daBubbleArrow = "none";
+  }
+
+  @Output() messageEmitter = new EventEmitter<string>();
+  @Input() projectName:string = '';
+
+  showProject(projectName:string) {
+    this.projectName = projectName;
+    this.messageEmitter.emit(this.projectName);
+  }
+}

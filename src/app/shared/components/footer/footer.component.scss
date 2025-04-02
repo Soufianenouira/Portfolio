@@ -1,0 +1,43 @@
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    height: 100px;
+    transition: fill 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        >text{
+            fill: transparent;
+        }
+    }
+    >text {
+        font-family: 'Karla';
+        font-weight: 700;
+    }
+    
+    .logo-text{
+        fill: white;
+        stroke: white;
+        stroke-width: 0.5px;
+    }
+    
+    .logo-img{
+        fill: #3DCFB6;
+        stroke: #3DCFB6;
+        stroke-width: 1px;
+    }
+
+}

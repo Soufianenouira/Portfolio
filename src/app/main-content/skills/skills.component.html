@@ -1,0 +1,24 @@
+<section>
+    <div class="content">
+        <div class="technologies">
+            <h3>Technologies</h3>
+            <div class="skill-set">
+                <b class="skill-set-title">Skill Set</b>
+                <p>A short introduction of your skills. Highlight your experience of  
+                    using different front-end technologies and emphasise your openness to
+                    learning and adapting to new technologies. Show how important it is for you 
+                    to keep up with the rapid changes in web development.</p>
+                <b class="another-skill">You need <span>another Skill?</span></b>
+                <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+                <button>Let's Talk</button>
+            </div>
+        </div>
+        <div class="skills-icons">
+            @for(icon of skillsIcons; track icon.name){
+            <div class="single-icon">
+                <img src="{{icon.img}}" alt="">
+            </div>
+            }
+        </div>
+    </div>
+</section>
