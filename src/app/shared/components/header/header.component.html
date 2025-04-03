@@ -9,11 +9,20 @@
             </div>
             <div>
                 <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100">
-                    <text class="logo-img" x="0" y="83" font-family="Arial" font-size="80">S</text>
-                    <text class="logo-img" x="18" y="80" font-family="Arial" font-size="80">N</text>
-                    <text class="logo-text" x="70" y="53" font-family="Arial" font-size="30">SOUFIANE</text>
-                    <text class="logo-text" x="70" y="76" font-family="Arial" font-size="30">NOUIRA</text>
+                    <text class="logo-img" x="0" y="83" font-family="karla" font-size="60">S</text>
+                    <text class="logo-img" x="18" y="80" font-family="karla" font-size="60">N</text>
+                    <text class="logo-text" x="60" y="53" font-family="karla" font-size="20">SOUFIANE</text>
+                    <text class="logo-text" x="60" y="76" font-family="karla" font-size="20">NOUIRA</text>
                 </svg>
+            </div>
+            <div class="menu-mobile">
+                <div class="burger-menu" (click)="openMenu()"><img src="./../../../../assets/img/menu.png" alt=""></div>
+                <div class="nav-mobile" [ngStyle]="{display: menuDisplay}">
+                    <a href="">About me</a>
+                    <a href="">Skills</a>
+                    <a href="">Projects</a>
+                    <img src="/assets/img/3. Language switch (1).png" alt="">
+                </div>
             </div>
         </nav>
     </div>

@@ -26,13 +26,13 @@ section {
     align-items: center;
 
     >h1 {
-        font-size: clamp(20px, 10vw, 128px);
+        font-size: clamp(20px, 9vw, 128px);
         font-weight: 700;
         font-family: 'Karla', sans-serif;
     }
 
     >p {
-        font-size: clamp(10px, 3.7vw, 40px);
+        font-size: clamp(12px, 4.7vw, 40px);
         font-family: 'fira code', 'sans-serif';
         font-weight: 400;
     }
@@ -122,5 +122,20 @@ section {
 @keyframes marquee {
     to {
         transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 1300px){
+    section{
+        padding-top: 184px;
+    }
+}
+
+@media (max-width: 500px){
+    button{
+        padding: 1px 10px;
+    }
+    .title-bttns{
+        gap: 20px;
     }
 }

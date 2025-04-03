@@ -9,9 +9,10 @@ section{
 
 .content{
     max-width: 1440px;
-    width: 100%;
+    width: 97%;
     display: flex;
     flex-direction: column;
+    padding-left: 30px;
     >h3{
         color:  #3DCFB6;
         font-family: "karla";
@@ -21,7 +22,7 @@ section{
 
     >b{
         color: #3DCFB6;
-        font-size: 64px;
+        font-size: clamp(54px, 9vw, 64px);
         font-family: "fira code";
         font-weight: 700;
     }
@@ -98,4 +99,56 @@ section{
     padding-left: 5px;
     padding-right: 5px;
     margin: 0;
+    font-family: "karla";
+    font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+    .content{
+        padding-left: 9px;
+    }
+
+    .project{
+        padding: 40px 0px;
+    }
+}
+
+@media (max-width: 750px) {
+    .project-info{
+        width: 97%;
+    }
+
+    .project-imgs{
+        width: 0;
+        display: flex;
+        >img{
+            width: 0;
+            max-height: 192px;
+        }
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .content{
+        >b{
+            font-size: clamp(43px, 9vw, 64px);
+        }
+    }
+
+    .project{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 365px) {
+
+    .projects{
+        justify-content: flex-start;
+    }
+
+    .tool{
+        font-weight: 600;
+        font-size: 12px;
+    }
 }

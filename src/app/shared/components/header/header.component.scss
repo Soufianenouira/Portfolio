@@ -37,7 +37,7 @@ nav {
         text-decoration: none;
         font-family: 'fira code', 'sans-serif';
         font-weight: 400;
-        font-size: clamp(10px, 0.9vw, 20px);
+        font-size: clamp(12px, 1.9vw, 20px);
     }
 
     >img {
@@ -48,8 +48,9 @@ nav {
 
 
 .logo {
-    width: 300px;
+    width: 160px;
     height: 100px;
+    margin-left: -10px;
     transition: fill 0.3s ease;
     &:hover {
         cursor: pointer;
@@ -76,3 +77,54 @@ nav {
 
 }
 
+.nav-mobile{
+    border: solid 1px  #3DCFB6;
+    border-radius: 30px;
+    background: linear-gradient(to right, #1c1c1c, #08463B);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 99;
+    position: fixed;
+    margin-top: 27px;
+    >a {
+        color: white;
+        text-decoration: none;
+        font-family: 'fira code', 'sans-serif';
+        font-weight: 400;
+        font-size: clamp(12px, 6.9vw, 20px);
+        &:hover{
+            color: #3DCFB6;
+        }
+    }
+}
+
+.menu-mobile{
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.burger-menu{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 750px){
+    .menu-mobile{
+        display: flex;
+    }
+
+    .menu{
+        display: none;
+    }
+    .nav{
+        padding: 10px 10px;
+    }
+    .logo {
+        width: 280px;
+        margin-left: -100px;
+    }
+}
