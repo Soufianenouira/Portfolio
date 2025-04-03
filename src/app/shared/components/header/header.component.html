@@ -2,10 +2,10 @@
     <div class="content">
         <nav>
             <div class="menu">
-                <img src="/assets/img/3. Language switch (1).png" alt="">
-                <a href="">About me</a>
-                <a href="">Skills</a>
-                <a href="">Projects</a>
+                <img class="language-btn" (click)="global.DeEn()" src={{global.languageImg}} alt="">
+                <a href="">{{global.texte[global.language].about}}</a>
+                <a href="">{{global.texte[global.language].skills}}</a>
+                <a href="">{{global.texte[global.language].projects}}</a>
             </div>
             <div>
                 <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100">
@@ -16,12 +16,12 @@
                 </svg>
             </div>
             <div class="menu-mobile">
-                <div class="burger-menu" (click)="openMenu()"><img src="./../../../../assets/img/menu.png" alt=""></div>
+                <div class="burger-menu" (click)="openMenu()"><img src="/assets/img/menu.png" alt=""></div>
                 <div class="nav-mobile" [ngStyle]="{display: menuDisplay}">
-                    <a href="">About me</a>
-                    <a href="">Skills</a>
-                    <a href="">Projects</a>
-                    <img src="/assets/img/3. Language switch (1).png" alt="">
+                    <img class="language-btn" (click)="global.DeEn()" src={{global.languageImg}} alt="">
+                    <a href="">{{global.texte[global.language].about}}</a>
+                    <a href="">{{global.texte[global.language].skills}}</a>
+                    <a href="">{{global.texte[global.language].projects}}</a>
                 </div>
             </div>
         </nav>

@@ -10,7 +10,7 @@
                 <div class="project" (mouseover)="over(project.img, index)" (mouseout)="out()" (click)="showProject(project.name)">
                     <div class="project-name">
                         <p >{{project.name}}</p>
-                        <img src="/assets/img/arrow_outward.png" [ngStyle]="{'display': index == 0 ? joinArrow : index == 1 ? pocoLocoArrow :  daBubbleArrow}">
+                        <img src="./../../../assets/img/arrow_outward.png" [ngStyle]="{'display': index == 0 ? joinArrow : index == 1 ? pocoLocoArrow :  daBubbleArrow}">
                     </div>
                     <div class="tools">
                         <table>

@@ -27,6 +27,12 @@ nav {
     width: 100%;
 }
 
+.language-btn{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -110,6 +116,13 @@ nav {
     &:hover{
         cursor: pointer;
     }
+}
+
+.de-en{
+    width: 84px;
+    height: 28px;
+    border: solid 1px #3DCFB6;
+    border-radius: 100px;
 }
 
 @media (max-width: 750px){

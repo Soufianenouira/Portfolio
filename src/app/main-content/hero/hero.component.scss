@@ -17,6 +17,21 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 30px;
+}
+
+.linkedin-img{
+    &:hover{
+        cursor: pointer;
+        content: url("./../../../assets/img/linked_in.png");
+    }
+}
+
+.git-img{
+    &:hover{
+        cursor: pointer;
+        content: url("./../../../assets/img/github.png");
+    }
 }
 
 .title {
@@ -26,7 +41,7 @@ section {
     align-items: center;
 
     >h1 {
-        font-size: clamp(20px, 9vw, 128px);
+        font-size: clamp(20px, 8vw, 128px);
         font-weight: 700;
         font-family: 'Karla', sans-serif;
     }
@@ -129,6 +144,10 @@ section {
     section{
         padding-top: 184px;
     }
+
+    .content{
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 500px){
@@ -137,5 +156,9 @@ section {
     }
     .title-bttns{
         gap: 20px;
+    }
+
+    .content{
+        padding: 0 5px;
     }
 }

@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body{
     box-sizing: border-box;
@@ -20,12 +20,18 @@ border-radius: 100px;
 padding: 13px 24px;
 gap: 10px;
 font-family: 'karla', 'sans-serif';
-font-size: clamp(10px, 5vw, 18px);
+font-size: clamp(10px, 4vw, 18px);
 font-weight: 400;
     &:hover{
         cursor: pointer;
         border:  solid 1px #3DCFB6;
         color:  #3DCFB6;
+        >a{
+            color:  #3DCFB6;
+        }
+    }
+    >a{
+        text-decoration: none;
     }
 }
 

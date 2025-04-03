@@ -14,25 +14,25 @@ export class PortfolioComponent {
     {
       "name": "Join",
       "usedTools": ['Anguler', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
-      "img": "/assets/img/Group21.png",
+      "img": "./../../../assets/img/group21.png",
       "link": "...."
     },
     {
       "name": "El Poco Loco",
       "usedTools": ['HTML', 'CSS', 'JavaScript'],
-      "img": "/assets/img/Group22.png",
+      "img": "./../../../assets/img/group22.png",
       "link": "...."
     },
     {
       "name": "DA Bubble",
       "usedTools": ['Anguler', 'Firebase', 'TypeScript'],
-      "img": "/assets/img/Group23.png",
+      "img": "./../../../assets/img/group23.png",
       "link": "...."
     }
 
   ];
 
-  projectImage: string = "/assets/img/Group21.png";
+  projectImage: string = "./../../../assets/img/group21.png";
   alignment: string = "flex-start"
   displayStyle: string = "none";
   daBubbleArrow: string = "none";
