@@ -1,37 +1,43 @@
 <section>
+    <!-- <div class="overlayer" [ngStyle]="{display: overlayerDisplay}">
+        <div class="msg-sent">
+            hshshsh
+        </div>
+    </div> -->
     <div class="content">
         <div class="lets-work-together">
-            <h3>Contact me</h3>
-            <b>Let's work together</b>
-            <h3>Got a problem to solve?</h3>
+            <h3>{{global.texte[global.language].contactMe}}</h3>
+            <b>{{global.texte[global.language].letsWorkT}}</b>
+            <h3>{{global.texte[global.language].gotAProblem}}</h3>
         </div>
         <form class="contact-infos" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div class="infos">
-                <h3>What's your name?</h3>
+                <h3>{{global.texte[global.language].yourName}}</h3>
                 <input [(ngModel)]="contactData.name" #name="ngModel" name="name" type="text" id="name" placeholder="Your name goas here" required >
                 @if(!name.valid && name.touched){
                     <span>please enter your name</span>
                 }
             </div>
             <div class="infos">
-                <h3>What's your email?</h3>
+                <h3>{{global.texte[global.language].yourEmail}}</h3>
                 <input [(ngModel)]="contactData.email" #email="ngModel" name="email" type="text" id="email" placeholder="youremail@email.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 @if(!email.valid && email.touched){
                     <span>please enter your email</span>
                 }
             </div>
             <div class="infos">
-                <h3>How can I help you?</h3>
+                <h3>{{global.texte[global.language].subject}}</h3>
                 <textarea [(ngModel)]="contactData.message" #message="ngModel" name="message" id="message" placeholder="Hello Soufiane, I am interessed in..." required ></textarea>
                 @if(!message.valid && message.touched){
                     <span>please enter a message</span>
                 }
             </div>
-            
-            <p><input name="checkbox" id="checkbox" class="checkbox" type="checkbox" required> I've read the <span> privacy policy </span> and agree to the processing of my data as outlined.</p>
-            <button>Say hello ;)</button>
-                
-            
+            <p><input name="checkbox" [(ngModel)]="contactData.checkbox" #checkbox="ngModel" id="checkbox" class="checkbox" type="checkbox" required> I've read the <span> privacy policy </span> and agree to the processing of my data as outlined.</p>
+            @if(!checkbox.valid &&checkbox.touched){
+                <span >please enter a message</span>
+            }
+            <button [ngStyle]="{background: border}">Say hello ;)</button>
         </form>
     </div>
+    <p [ngStyle]="{display: msgSentDisplay}">🎉danke für deine interesse. Ich melde mich baldmöglichtst bei dir</p>
 </section>

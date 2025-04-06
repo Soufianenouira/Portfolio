@@ -3,7 +3,6 @@
 }
 
 .overlayer {
-
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -18,6 +17,9 @@
 
 .content {
     max-width: 1440px;
+    max-height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     border: solid 1px #3DCFB6;
     border-radius: 30px;
     background: linear-gradient(to right, #1c1c1c, #08463B);
@@ -29,7 +31,7 @@
 .project-infos {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .next-project-btn {
@@ -56,13 +58,28 @@
     }
 
 }
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
 
 .left-side {
     width: 38%;
-
     >h4 {
         font-family: "karla";
-        font-size: 128px;
+        font-size: clamp(48px, 12vh, 128px);
         font-weight: 700;
         color: #3DCFB6;
         margin-bottom: 24px;
@@ -138,9 +155,6 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    gap: 40px;
-
-
 }
 
 .overlayer-close-btn {

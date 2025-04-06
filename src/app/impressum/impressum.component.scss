@@ -1,0 +1,26 @@
+html{
+    margin: 0;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+    min-height: 75vh;
+    margin: 0;
+    background: linear-gradient(to right, #1c1c1c, #08463B);
+    color: white;
+    >p{
+        >a{
+            color: white;
+        }
+    }
+}
+
+.content{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}

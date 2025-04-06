@@ -5,19 +5,34 @@
 section {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background: linear-gradient(to right, #1c1c1c, #08463B);
     color: white;
-    padding-top: 284px;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: clamp(-180px, -51vh, -400px);
+}
+
+app-header{
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .content{
     max-width: 1440px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .linkedin-img{
@@ -31,6 +46,14 @@ section {
     &:hover{
         cursor: pointer;
         content: url("./../../../assets/img/github.png");
+    }
+}
+
+.email-img{
+    display: none;
+    &:hover{
+        cursor: pointer;
+        content: url("./../../../assets/img/mail.png");
     }
 }
 
@@ -59,8 +82,6 @@ section {
 }
 
 .right-container{
-    
-    margin-top: 250px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +93,6 @@ section {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 149px;
     gap: 20px;
     width: 40px;
 }
@@ -101,7 +121,10 @@ section {
 
 .email-adress{
     transform: rotate(-90deg);
-    margin-bottom: 80px;
+    margin-bottom: 102px;
+    font-family: "karla";
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .marquee-container {
@@ -113,7 +136,7 @@ section {
     transform: skewY(-2deg);
     transform-origin: top right;
     padding: 12px 0px;
-    margin-top: 350px ;
+    margin-bottom: 65px;
     z-index: 99;
 }
 
@@ -140,25 +163,63 @@ section {
     }
 }
 
-@media (max-width: 1300px){
-    section{
-        padding-top: 184px;
+@media (max-width: 1020px){
+    .content{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    .content{
-        padding: 0 10px;
+    app-header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .marquee-container {
+        margin-bottom: 35px;
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 520px){
     button{
         padding: 1px 10px;
     }
     .title-bttns{
         gap: 20px;
     }
+}
 
-    .content{
-        padding: 0 5px;
+@media (max-height: 600px){
+
+    .email-adress{
+        display: none;
+    }
+}
+
+@media (max-height: 450px){
+
+    .left-container{
+        display: none;
+    }
+
+    .right-container{
+        display: none;
+    }
+    
+    .container{
+        margin-top: 10px;
+    }
+
+    .title{
+        margin-bottom: 85px;
+    }
+}
+
+@media (max-width: 400px){
+    .email-adress{
+        display: none;
+    }
+
+    .email-img{
+        display: flex;
     }
 }

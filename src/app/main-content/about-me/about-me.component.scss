@@ -71,11 +71,11 @@ section{
     }
 
     .profil-img{
-        width: 466px;
+        width: 600px;
     }
 
     .who-i-am{
-        width: 466px;
+        width: 600px;
         >h3{
             font-size: clamp(10px, 4vw, 24px);
         }
@@ -92,7 +92,7 @@ section{
     }
 }
 
-@media (max-width: 550px){
+@media (max-width: 640px){
 
     .profil-img{
         width: 100%;

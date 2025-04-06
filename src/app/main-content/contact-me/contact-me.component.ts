@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { Component, inject, viewChild, ViewChild } from '@angular/core';
+import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { GlobalFunctionsService } from '../../services/global-functions.service';
 
 @Component({
   selector: 'app-contact-me',
@@ -12,7 +13,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 })
 export class ContactMeComponent {
   http = inject(HttpClient);
-
+  global = inject(GlobalFunctionsService);
   references = [
     { "author": "patrick", "comment": "cooler Typ" },
     { "author": "patrick", "comment": "cooler Typ" },
@@ -26,12 +27,22 @@ export class ContactMeComponent {
   contactData = {
     name: "",
     email: "",
-    message: ""
+    message: "",
+    checkbox: false
   };
+  @ViewChild('name') name: NgModel | undefined;
+  @ViewChild('email') email: NgModel | undefined;
+  @ViewChild('message') message: NgModel | undefined;
+  @ViewChild('checkbox') checkbox: NgModel | undefined;
   mailTest = true;
+  checkboxError = "none";
+  disabled = true;
+  border = "transparent";
+  overlayerDisplay = "flex";
+  msgSentDisplay = "none";
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://soufiane-nouira.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -41,12 +52,17 @@ export class ContactMeComponent {
     },
   };
 
+  enableSendButton(){
+    this.border = "#3dcfb73f";
+  }
+
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+    if (ngForm.submitted && !this.mailTest) {
+      if (ngForm.form.valid) {
+        this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.msgSentDisplay = "flex";
             ngForm.resetForm();
           },
           error: (error) => {
@@ -54,9 +70,43 @@ export class ContactMeComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      }else{
+        this.checkboxError = "flex";
+        if (this.name) {
+          this.name.control.markAsTouched();
+        }
+        if (this.email) {
+          this.email.control.markAsTouched();
+        }
+        if (this.message) {
+          this.message.control.markAsTouched();
+        }
+        if (this.checkbox) {
+          this.checkbox.control.markAsTouched();
+        }
+      }
       
-      ngForm.resetForm();
+
+    } else if (ngForm.submitted  && this.mailTest) {
+      if (ngForm.form.valid) {
+        this.msgSentDisplay = "flex";
+        ngForm.resetForm();
+      }
+      else{
+        this.checkboxError = "flex";
+        if (this.name) {
+          this.name.control.markAsTouched();
+        }
+        if (this.email) {
+          this.email.control.markAsTouched();
+        }
+        if (this.message) {
+          this.message.control.markAsTouched();
+        }
+        if (this.checkbox) {
+          this.checkbox.control.markAsTouched();
+        }
+      }
     }
   }
 }

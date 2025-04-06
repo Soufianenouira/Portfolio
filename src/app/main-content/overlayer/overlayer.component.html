@@ -1,5 +1,8 @@
 <section class="overlayer" [ngStyle]="{display: projectToBeShown == ''? displayNone : displayFlex}">
     <div class="content">
+        <div class="overlayer-close-btn">
+            <button (click)="close()"><img src="./../../../assets/img/close_small.png" alt=""></button>
+        </div>
         <div class="project-infos" [ngStyle]="{display: projectToBeShown == 'Join'?  displayFlex : displayNone}">
             <div class="left-side">
                 <h4>01</h4>
@@ -13,14 +16,11 @@
                     }
                 </div>
                 <div class="overlayer-links-btn">
-                    <button>GitHub <img src="./../../../assets/img/arrow_outward.png"></button>
+                    <button><a href="https://github.com/Soufianenouira/ElPocoLoco">GitHub <img src="./../../../assets/img/arrow_outward.png"></a></button>
                     <button>Live Test <img src="./../../../assets/img/arrow_outward.png"></button>
                 </div>
             </div>
             <div class="right-side">
-                <div class="overlayer-close-btn">
-                    <button (click)="close()"><img src="./../../../assets/img/close_small.png" alt=""></button>
-                </div>
                 <img src="./../../../assets/img/join_overlayer.png" alt="">
             </div>
         </div>
@@ -39,14 +39,11 @@
                     </div>
                 
                 <div class="overlayer-links-btn">
-                    <button>GitHub <img src="./../../../assets/img/arrow_outward.png"></button>
+                    <button><a href="https://github.com/Soufianenouira/ElPocoLoco">GitHub <img src="./../../../assets/img/arrow_outward.png"></a></button>
                     <button>Live Test <img src="./../../../assets/img/arrow_outward.png"></button>
                 </div>
             </div>
             <div class="right-side">
-                <div class="overlayer-close-btn">
-                    <button (click)="close()"><img src="./../../../assets/img/close_small.png" alt=""></button>
-                </div>
                 <img src="./../../../assets/img/pocoloco_overlayer.png" alt="">
             </div>
         </div>
@@ -63,17 +60,14 @@
                     }
                 </div>
                 <div class="overlayer-links-btn">
-                    <button>GitHub <img src="./../../../assets/img/arrow_outward.png"></button>
+                    <button><a href="https://github.com/Soufianenouira/ElPocoLoco">GitHub <img src="./../../../assets/img/arrow_outward.png"></a></button>
                     <button>Live Test <img src="./../../../assets/img/arrow_outward.png"></button>
                 </div>
             </div>
             <div class="right-side">
-                <div class="overlayer-close-btn">
-                    <button (click)="close()"><img src="./../../../assets/img/close_small.png" alt=""></button>
-                </div>
                 <img src="./../../../assets/img/bubble_overlayer.png" alt="">
             </div>
         </div>
-        <div class="next-project-btn"><a (click)="nextProject()">Next project</a> <img src="./../../../assets/img/overlayer_arrows.png" alt=""></div>
+        <div class="next-project-btn" (click)="nextProject()"><a>Next project</a> <img src="./../../../assets/img/overlayer_arrows.png" alt=""></div>
     </div>
 </section>

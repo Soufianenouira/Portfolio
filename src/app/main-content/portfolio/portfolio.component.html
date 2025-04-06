@@ -1,9 +1,9 @@
 <section>
     
     <div class="content">
-        <h3>Protfolio</h3>
-        <b>Featured Projects</b>
-        <p>Explor a selection of my work here - Interact with projects to see my skills in action</p>
+        <h3>Portfolio</h3>
+        <b>{{global.texte[global.language].featuredProjects}}</b>
+        <p>{{global.texte[global.language].explore}}</p>
         <div class="projects">
             <div class="project-info">
                 @for(project of projects; track project.name; let index = $index){

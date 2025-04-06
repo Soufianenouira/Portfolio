@@ -23,11 +23,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 36px;
+    padding: 10px 0px;
     width: 100%;
 }
 
 .language-btn{
+    width: 96px;
     &:hover{
         cursor: pointer;
     }
@@ -92,7 +93,7 @@ nav {
     flex-direction: column;
     gap: 5px;
     z-index: 99;
-    position: fixed;
+    position: absolute;
     margin-top: 27px;
     >a {
         color: white;
@@ -136,8 +137,5 @@ nav {
     .nav{
         padding: 10px 10px;
     }
-    .logo {
-        width: 280px;
-        margin-left: -100px;
-    }
+    
 }

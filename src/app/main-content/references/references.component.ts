@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject} from '@angular/core';
 import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import { GlobalFunctionsService } from '../../services/global-functions.service';
 
 @Component({
   selector: 'app-references',
@@ -10,6 +11,7 @@ import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
   styleUrl: './references.component.scss'
 })
 export class ReferencesComponent {
+  global = inject(GlobalFunctionsService);
 feedbacks :{name: string; feedback: string, ref: string}[]= 
 [
 {

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, Output, EventEmitter, Input} from '@angular/core';
+import { Component, Output, EventEmitter, Input, inject} from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { GlobalFunctionsService } from '../../services/global-functions.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -10,6 +11,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
+  global = inject(GlobalFunctionsService);
   projects = [
     {
       "name": "Join",

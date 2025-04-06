@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject} from '@angular/core';
+import { GlobalFunctionsService } from '../../services/global-functions.service';
 
 @Component({
   selector: 'app-skills',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+  global = inject(GlobalFunctionsService);
   skillsIcons = [
     {
       "name": "HTML",

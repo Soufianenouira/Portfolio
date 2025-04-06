@@ -67,6 +67,9 @@ section {
 
 .middel{
     >p{
+        font-size: clamp(12px, 3vw, 18px);
+        font-family: 'fira code';
+        font-weight: 400;
         color: #3DCFB6;
     }
 }
@@ -95,6 +98,12 @@ ul{
             cursor: pointer;
             list-style-type: disc;
             color: #3DCFB6;
+        }
+        a{
+            &:hover{
+                color: #3DCFB6;
+                text-decoration: underline;
+            }
         }
     }
 
