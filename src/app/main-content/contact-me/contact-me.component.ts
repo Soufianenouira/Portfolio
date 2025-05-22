@@ -34,7 +34,7 @@ export class ContactMeComponent {
   @ViewChild('email') email: NgModel | undefined;
   @ViewChild('message') message: NgModel | undefined;
   @ViewChild('checkbox') checkbox: NgModel | undefined;
-  mailTest = true;
+  mailTest = false;
   checkboxError = "none";
   disabled = true;
   border = "transparent";
@@ -68,7 +68,7 @@ export class ContactMeComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info(),
         });
       }else{
         this.checkboxError = "flex";

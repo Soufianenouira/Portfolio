@@ -17,7 +17,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: clamp(-180px, -51vh, -400px);
 }
 
 app-header{
@@ -64,7 +63,7 @@ app-header{
     align-items: center;
 
     >h1 {
-        font-size: clamp(20px, 8vw, 128px);
+        font-size: clamp(20px, 12vw, 128px);
         font-weight: 700;
         font-family: 'Karla', sans-serif;
     }
@@ -79,6 +78,7 @@ app-header{
 .title-bttns {
     display: flex;
     gap: 48px;
+    margin-top: 24px;
 }
 
 .right-container{
@@ -152,8 +152,12 @@ app-header{
 .marquee-text {
     color: #3DCFB6;
     font-size: 32px;
-    padding-right: 20px;
+    padding: 0 24px;
     font-family: 'Karla', sans-serif;
+}
+
+.padding-left{
+    padding-left: 43px;
 }
 
 
@@ -180,11 +184,11 @@ app-header{
 }
 
 @media (max-width: 520px){
-    button{
-        padding: 1px 10px;
-    }
     .title-bttns{
         gap: 20px;
+    }
+    button{
+        padding: 11px 12px;
     }
 }
 
@@ -195,26 +199,14 @@ app-header{
     }
 }
 
-@media (max-height: 450px){
+@media (max-height: 640px){
 
-    .left-container{
-        display: none;
-    }
-
-    .right-container{
-        display: none;
-    }
-    
-    .container{
-        margin-top: 10px;
-    }
-
-    .title{
-        margin-bottom: 85px;
+    section{
+        height: unset;
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 1135px){
     .email-adress{
         display: none;
     }

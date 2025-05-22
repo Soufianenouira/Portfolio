@@ -4,19 +4,17 @@
             <h3>{{global.texte[global.language].technologies}}</h3>
             <div class="skill-set">
                 <b class="skill-set-title">{{global.texte[global.language].skillSet}}</b>
-                <p>A short introduction of your skills. Highlight your experience of  
-                    using different front-end technologies and emphasise your openness to
-                    learning and adapting to new technologies. Show how important it is for you 
-                    to keep up with the rapid changes in web development.</p>
+                <p>{{global.texte[global.language].introduction}}</p>
                 <b class="another-skill">{{global.texte[global.language].youNeed}} <span>{{global.texte[global.language].anotherSkill}}</span></b>
-                <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+                <p>{{global.texte[global.language].feel}}</p>
                 <button><a href="#contact">{{global.texte[global.language].letsTalk}}</a></button>
             </div>
         </div>
         <div class="skills-icons">
             @for(icon of skillsIcons; track icon.name){
             <div class="single-icon">
-                <img src="{{icon.img}}" alt="">
+                <img class="icon-img" src="{{icon.img}}" alt="">
+                <p>{{icon.name}}</p>
             </div>
             }
         </div>

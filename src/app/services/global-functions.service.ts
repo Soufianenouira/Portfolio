@@ -10,36 +10,53 @@ export class GlobalFunctionsService {
   texte = 
 [
   {
-    "about": "Über mich",
-    "skills": "Fähigkeiten",
-    "projects": "Projekte",
-    "FrontendDeveloper": "Frontend Entwickler",
-    "checkMyWork": "meine Arbeiten",
-    "contactMe": "Kontaktiere mich",
-    "basedIn": "Ansässig in Frankfurt am Main",
-    "open": "offen für neue Stellen",
-    "avialable": "Verfügbar für Remote-Arbeit",
-    "whoIAm": "Wer ich bin",
-    "technologies": "Technologien",
-    "skillSet": "skills",
-    "youNeed": "Du benötigst",
-    "anotherSkill": "Noch eine Fähigkeit?",
-    "letsTalk": "Lass uns sprechen",
-    "featuredProjects": "Ausgewählte Projekte",
-    "explore": "Entdecke eine Auswahl meiner Arbeiten hier - Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen",
-    "colleagues": "Was meine Kollegen über mich sagen",
-    "whatsYourName": "Wie heißt du?",
-    "email": "Wie lautet deine E-Mail?",
-    "subject": "Wie kann ich dir weiterhelfen?",
-    "yourName": "Dein Name?",
-    "yourEmail": "Deine E-Mail?",
-    "yourMessage": "Deine Nachricht",
-    "letsWorkT": "Lass uns zusammen arbeiten",
-    "gotAProblem": "Hast du ein Problem zu lösen?"
-},
+  "about": "Über mich",
+  "heyThere": "Hallo, ich bin Soufiane! Als Frontend-Entwickler konzentriere ich mich auf die Gestaltung klarer, benutzerfreundlicher Interfaces unter Verwendung moderner Webtechnologien wie Angular, JavaScript, HTML und CSS. Ich arbeite gerne an kreativen Lösungen mit technischer Tiefe – stets mit Blick auf Design und Performance. Darüber hinaus bringe ich Erfahrung mit C, C++, C# und Verilog mit, was mein technisches Verständnis und meine Vielseitigkeit als Entwickler stärkt.",
+  "located": "Ich lebe in Frankfurt am Main und arbeite sowohl vor Ort als auch remote effizient. Auch hybride Arbeitsmodelle sind möglich.",
+  "openMinded": "Ich bin sehr lernfreudig und suche kontinuierlich nach Möglichkeiten, mein Wissen und meine Fähigkeiten zu erweitern. Ob in privaten oder beruflichen Projekten – ich fordere mich aktiv heraus, bleibe neugierig und offen für neue Technologien und Ideen.",
+  "brief": "Bei der Lösung von Problemen verbinde ich analytisches Denken mit Kreativität, um effektive und elegante Lösungen zu entwickeln. Jede Herausforderung sehe ich als Chance, meine Fähigkeiten zu verfeinern und mein Wissen zu erweitern. Mit Ausdauer arbeite ich methodisch an der Lösung von Problemen und schätze Zusammenarbeit, da die besten Ergebnisse oft aus gemeinsamen Ideen und vielfältigen Perspektiven entstehen.",
+  "skills": "Fähigkeiten",
+  "introduction": "Umfassende Expertise in der modernen Frontend-Entwicklung, gestützt durch ein starkes technisches Fundament und Erfahrung mit Low-Level-Programmiersprachen. Dieses tiefgehende Verständnis für systemnahe Abläufe ermöglicht die Umsetzung effizienter und leistungsstarker Lösungen – auch bei komplexen Anforderungen. Eine hohe Lernbereitschaft sowie die Fähigkeit, sich schnell auf neue Technologien und Frameworks einzustellen, gewährleisten Flexibilität in einem sich ständig weiterentwickelnden Umfeld. Die regelmäßige Auseinandersetzung mit aktuellen Trends und Innovationen in der Webentwicklung ist ein fester Bestandteil der Arbeitsweise und sorgt dafür, dass alle Lösungen modern, nachhaltig und zukunftssicher sind.",
+  "feel": "Melden Sie sich gerne. Ich freue mich darauf, mein Wissen weiter auszubauen.",
+  "projects": "Projekte",
+  "FrontendDeveloper": "Frontend-Entwickler",
+  "checkMyWork": "Schau dir meine Arbeit an",
+  "contactMe": "Kontakt",
+  "basedIn": "Ansässig in Frankfurt am Main",
+  "open": "Offen für neue Herausforderungen",
+  "avialable": "Verfügbar für Remote-Arbeit",
+  "whoIAm": "Wer ich bin",
+  "technologies": "Technologien",
+  "skillSet": "Kompetenzen",
+  "youNeed": "Du suchst",
+  "anotherSkill": "eine andere Fähigkeit?",
+  "letsTalk": "Lass uns sprechen",
+  "featuredProjects": "Ausgewählte Projekte",
+  "explore": "Entdecke hier eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+  "colleagues": "Was Kollegen über mich sagen",
+  "whatsYourName": "Wie ist dein Name?",
+  "email": "Wie lautet deine E-Mail-Adresse?",
+  "subject": "Wobei kann ich helfen?",
+  "yourName": "Dein Name",
+  "yourEmail": "Deine E-Mail-Adresse",
+  "yourMessage": "Deine Nachricht",
+  "letsWorkT": "Lass uns zusammen arbeiten",
+  "gotAProblem": "Ein Problem zu lösen?"
+}
+,
   {
     "about": "About me",
+    "heyThere": `Hey there, I'm Soufiane! As a Frontend Engineer, I focus on creating clear, user-friendly interfaces using modern web technologies such as Angular, JavaScript, HTML, and CSS.
+                    I enjoy working on creative solutions with technical depth, always keeping both design and performance in mind.
+                    Additionally, I bring experience in C, C++, C#, and Verilog, which enhances my technical understanding and versatility as a developer.`,
+    "located": `Located in Frankfurt am Main, I can work effectively both on-site and remotely. Hybrid models that combine office and remote work are also possible`,
+    "openMinded": `I am highly eager to learn and continuously seek opportunities to expand my knowledge and skills. Whether in personal or professional projects, I actively challenge myself to grow, stay curious, and embrace new technologies and ideas`,
+    "brief": `When approaching a problem, I combine analytical thinking with creativity to explore effective and elegant solutions.
+                    I see each challenge as a learning opportunity, refining my skills and expanding my knowledge along the way.
+                    With persistence, I work through obstacles methodically, and I value collaboration—believing that the best results often come from shared ideas and diverse perspectives.`,
     "skills": "Skills",
+    "introduction": `Comprehensive expertise in modern front-end development, supported by a strong technical foundation that includes experience with low-level programming languages. This deep understanding of system-level processes enables the development of efficient and high-performance solutions, even for complex requirements. A strong willingness to learn and the ability to quickly adapt to new technologies and frameworks ensure flexibility in a rapidly evolving landscape. Staying up to date with current trends and innovations in web development is an integral part of the workflow, ensuring that all solutions are modern, sustainable, and future-ready.`,
+    "feel": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
     "projects": "Projects",
     "FrontendDeveloper": "Frontend Developer",
     "checkMyWork": "check my work",
@@ -128,16 +145,18 @@ impressum = `
         <p><strong>Haftung für Links:</strong><br>
         Unsere Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
 `;
-language = 0;
-languageImg = "./../../../../assets/img/en_de.png";
+language = localStorage.getItem('language')? Number(localStorage.getItem('language')) : 0;
+languageImg = this.language == 0 ? "./../../../../assets/img/de_en.png" : "./../../../../assets/img/en_de.png";
 DeEn(){
   if(this.language == 0){
     this.language = 1;
-    this.languageImg = "./../../../../assets/img/de_en.png";
+    localStorage.setItem('language', '1');
+    this.languageImg = "./../../../../assets/img/en_de.png";
     this.impressum = this.impressumEN;
   }else{
     this.language = 0;
-    this.languageImg = "./../../../../assets/img/en_de.png";
+    localStorage.setItem('language', '0');
+    this.languageImg = "./../../../../assets/img/de_en.png";
     this.impressum = this.impressumDE;
   }
 }

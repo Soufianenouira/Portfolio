@@ -16,45 +16,52 @@ export class SkillsComponent {
       "img": "./../../../assets/img/1.tech_icons.png"
     },
     {
-      "name": "HTML",
+      "name": "CSS",
       "img": "./../../../assets/img/2.tech_icons.png"
     },
     {
-      "name": "HTML",
+      "name": "JsvsScript",
       "img": "./../../../assets/img/3.tech_icons.png"
     },
     {
-      "name": "HTML",
+      "name": "Material Design",
       "img": "./../../../assets/img/4.tech_icons.png"
     },
     {
-      "name": "HTML",
+      "name": "TypeScript",
       "img": "./../../../assets/img/5.tech_icons.png"
     },
     {
-      "name": "HTML",
+      "name": "Angular",
       "img": "./../../../assets/img/6.tech_icons.png"
     },
     {
-      "name": "HTML",
+      "name": "Firebase",
       "img": "./../../../assets/img/7.tech_icons.png"
     },
     {
-      "name": "HTML",
+      "name": "Git",
       "img": "./../../../assets/img/8.tech_icons.png"
     },
     {
-      "name": "HTML",
+      "name": "Rest-API",
       "img": "./../../../assets/img/9.tech_icons.png"
     },
     {
-      "name": "HTML",
+      "name": "Scrum",
       "img": "./../../../assets/img/10.tech_icons.png"
     },
     {
-      "name": "HTML",
+      "name": "C",
+      "img": "./../../../assets/img/c.png"
+    },
+    {
+      "name": "C++",
+      "img": "./../../../assets/img/c_plus.png"
+    }, 
+    {
+      "name": "Growth Mindset",
       "img": "./../../../assets/img/11.tech_icons.png"
     }
-
   ]
 }
