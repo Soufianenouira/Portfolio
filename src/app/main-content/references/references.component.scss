@@ -17,6 +17,9 @@
 }
 
 
+.height70{
+    min-height: 70%;
+}
 
 section {
     text-align: center;
@@ -64,7 +67,7 @@ section {
         border-radius: 32px;
         border: 1px solid #3DCFB6;
         color: white;
-        text-align: center;
+        text-align: left;
         will-change: transform;
         transform-origin: center center;
         transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -180,7 +183,7 @@ section {
         .lineDiv {
             background-color: white;
             height: 1px;
-            width: 150px;
+            flex: 1;
         }
     }
 
