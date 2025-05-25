@@ -4,7 +4,7 @@
         <div class="feedback-wrapper">
             @for (comment of feedbacks[global.language]; track $index) {
             <div [ngClass]="getCardClass($index)" [class.active]="$index === middleIndex">
-                <p class="height70">{{ comment.feedback }}</p>
+                <p class="height70 karla-400">{{ comment.feedback }}</p>
                 <div class="feedbackBottom">
                     <div class="lineDiv"></div>
                     <span>{{ comment.name }}</span>

@@ -27,7 +27,7 @@ export class PortfolioComponent {
     },
     {
       "name": "DA Bubble",
-      "usedTools": ['Anguler', 'Firebase', 'TypeScript'],
+      "usedTools": ['HTML', 'CSS', 'JavaScript', 'Rest-API'],
       "img": "./../../../assets/img/group23.png",
       "link": "...."
     }

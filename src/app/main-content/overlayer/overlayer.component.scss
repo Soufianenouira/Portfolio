@@ -155,6 +155,9 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
+    >img{
+        width: 520px;
+    }
 }
 
 .overlayer-close-btn {
@@ -205,6 +208,15 @@
         width: 96%;
         align-items: center;
 
+        >img {
+            width: 498px;
+            margin-left: 7px;
+        }
+    }
+}
+
+@media(max-width: 560px) {
+    .right-side {
         >img {
             width: 100%;
         }
