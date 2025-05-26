@@ -1,9 +1,4 @@
 <section>
-    <!-- <div class="overlayer" [ngStyle]="{display: overlayerDisplay}">
-        <div class="msg-sent">
-            hshshsh
-        </div>
-    </div> -->
     <div class="content">
         <div class="lets-work-together">
             <h3>{{global.texte[global.language].contactMe}}</h3>
@@ -41,9 +36,6 @@
                 the processing of my data as outlined.</p>
             @if(!checkbox.valid &&checkbox.touched){
             <span>please enter a message</span>
-            }
-            @if(contactForm.valid){
-
             }
             <button  [ngClass]="{'active': contactForm.valid}">
                 Say hello ;)

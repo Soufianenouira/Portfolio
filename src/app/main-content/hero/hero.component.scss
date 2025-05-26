@@ -9,13 +9,15 @@ section {
     background: linear-gradient(to right, #1c1c1c, #08463B);
     color: white;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 124.17px);
 }
 
 .center{
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 100%;
+    align-items: center;
 }
 
 .container{
@@ -205,7 +207,7 @@ app-header{
     }
 }
 
-@media (max-height: 640px){
+@media (max-height: 710px){
 
     section{
         height: unset;

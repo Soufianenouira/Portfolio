@@ -15,26 +15,26 @@ export class PortfolioComponent {
   projects = [
     {
       "name": "Join",
-      "usedTools": ['Anguler', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
-      "img": "./../../../assets/img/group21.png",
+      "usedTools": ['Anguler', 'TypeScript', 'Firebase', 'HTML', 'CSS'],
+      "img": "./../../../assets/img/join_overlayer.png",
       "link": "...."
     },
     {
       "name": "El Poco Loco",
-      "usedTools": ['HTML', 'CSS', 'JavaScript'],
-      "img": "./../../../assets/img/group22.png",
+      "usedTools": ['JavaScript', 'HTML', 'CSS'],
+      "img": "./../../../assets/img/pocoloco_overlayer.png",
       "link": "...."
     },
     {
       "name": "DA Bubble",
-      "usedTools": ['HTML', 'CSS', 'JavaScript', 'Rest-API'],
-      "img": "./../../../assets/img/group23.png",
+      "usedTools": ['JavaScript', 'Rest-API', 'HTML', 'CSS'],
+      "img": "./../../../assets/img/bubble_overlayer.png",
       "link": "...."
     }
 
   ];
 
-  projectImage: string = "./../../../assets/img/group21.png";
+  projectImage: string = "./../../../assets/img//join_overlayer.png";
   alignment: string = "flex-start"
   displayStyle: string = "none";
   daBubbleArrow: string = "none";

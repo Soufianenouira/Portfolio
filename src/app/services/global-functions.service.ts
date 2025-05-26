@@ -20,8 +20,8 @@ export class GlobalFunctionsService {
   "feel": "Melden Sie sich gerne. Ich freue mich darauf, mein Wissen weiter auszubauen.",
   "projects": "Projekte",
   "FrontendDeveloper": "Frontend-Entwickler",
-  "checkMyWork": "Schau dir meine Arbeit an",
-  "contactMe": "Kontakt",
+  "checkMyWork": "Meine Projekte",
+  "contactMe": "Mein Kontakt",
   "basedIn": "Ansässig in Frankfurt am Main",
   "open": "Offen für neue Herausforderungen",
   "avialable": "Verfügbar für Remote-Arbeit",
@@ -41,7 +41,12 @@ export class GlobalFunctionsService {
   "yourEmail": "Deine E-Mail-Adresse",
   "yourMessage": "Deine Nachricht",
   "letsWorkT": "Lass uns zusammen arbeiten",
-  "gotAProblem": "Ein Problem zu lösen?"
+  "gotAProblem": "Ein Problem zu lösen?",
+  "joinDescription": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop und weise Benutzern sowie Kategorien zu.",
+  "elPolloLoccoDescription": "Ein Jump-'n'-Run-Spiel mit objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Sauce zu sammeln, um gegen das verrückte Huhn zu kämpfen.",
+  "PokedexDescription": "Dieses Pokédex basiert auf der PokéAPI. Suche nach deinem Lieblingspokémon und entdecke alle wichtigen Informationen darüber.",
+  "whatIs": "Worum geht es in diesem Projekt?",
+  "nextProject": "Nächstes Projekt"
 }
 ,
   {
@@ -80,13 +85,18 @@ export class GlobalFunctionsService {
     "yourEmail": "Your E-mail",
     "yourMessage": "Your Message",
     "letsWorkT" : "Let's work together",
-    "gotAProblem": "Got a problem to solve?"
+    "gotAProblem": "Got a problem to solve?",
+    "joinDescription":"Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "elPolloLoccoDescription":"Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "PokedexDescription":"This Pokédex is powered by the PokéAPI. Search for your favorite Pokémon and discover detailed information about each one.",
+    "whatIs": "What is this project about?",
+    "nextProject": "Next project"
   }
   
 ];
 
 impressumEN = `
-   <h1>Imprint</h1>
+  <h1>Imprint</h1>
 
     <p><strong>Information in accordance with Section 5 TMG:</strong></p>
     <p><strong>Soufiane Nouira</strong><br>

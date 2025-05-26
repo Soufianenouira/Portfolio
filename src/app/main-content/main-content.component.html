@@ -1,7 +1,7 @@
 <app-overlayer [projectToBeShown]="projectToBeShown" (messageEmitter)="closeProjectViewer($event)"></app-overlayer>
-<app-hero id="hero"></app-hero>
-<app-about-me id="about-me"></app-about-me>
-<app-skills id="skills"></app-skills>
-<app-portfolio id="projects" [projectName]="projectToBeShown" (messageEmitter)="openProjectViewer($event)"></app-portfolio>
+<app-hero id="hero" class="scroll-target"></app-hero>
+<app-about-me id="about-me" class="scroll-target"></app-about-me>
+<app-skills id="skills" class="scroll-target"></app-skills>
+<app-portfolio id="projects" class="scroll-target" [projectName]="projectToBeShown" (messageEmitter)="openProjectViewer($event)"></app-portfolio>
 <app-references></app-references>
-<app-contact-me id="contact"></app-contact-me>
+<app-contact-me id="contact" class="scroll-target"></app-contact-me>

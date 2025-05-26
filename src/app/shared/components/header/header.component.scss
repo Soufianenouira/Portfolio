@@ -9,6 +9,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 .content{
@@ -17,6 +20,12 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    @media (max-width: 1020px){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 nav {
@@ -111,6 +120,7 @@ nav {
     display: none;
     flex-direction: column;
     align-items: flex-end;
+    z-index: 9999;
 }
 
 .burger-menu{

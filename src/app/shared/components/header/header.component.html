@@ -18,7 +18,7 @@
             <div class="menu-mobile">
                 <div class="burger-menu" (click)="openMenu()"><img src="/assets/img/menu.png" alt=""></div>
                 <div class="nav-mobile" [ngStyle]="{display: menuDisplay}">
-                    <img class="language-btn" (click)="global.DeEn()" src={{global.languageImg}} alt="">
+                    <img class="language-btn" (click)="global.DeEn(); openMenu()" src={{global.languageImg}} alt="">
                     <a href="#about-me" (click)="openMenu()">{{global.texte[global.language].about}}</a>
                     <a href="#skills" (click)="openMenu()">{{global.texte[global.language].skills}}</a>
                     <a href="#projects" (click)="openMenu()">{{global.texte[global.language].projects}}</a>

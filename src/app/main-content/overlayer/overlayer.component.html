@@ -7,9 +7,8 @@
             <div class="left-side">
                 <h4>01</h4>
                 <b>Join</b>
-                <h5>What is this project about?</h5>
-                <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,
-                    assign users and categories.</p>
+                <h5>{{global.texte[global.language].whatIs}}</h5>
+                <p>{{global.texte[global.language].joinDescription}}</p>
                 <div class="tools">
                     @for (item of joinUsedTools; track $index) {
                     <div class="tool"><img src="{{item.img}} " alt="{{item.name}}">{{item.name}}</div>
@@ -28,9 +27,8 @@
             <div class="left-side">
                 <h4>02</h4>
                 <b>El Poco Loco</b>
-                <h5>What is this project about?</h5>
-                <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,
-                    assign users and categories.</p>
+                <h5>{{global.texte[global.language].whatIs}}</h5>
+                <p>{{global.texte[global.language].elPolloLoccoDescription}}</p>
                 
                     <div class="tools">
                         @for (item of poloUsedTools; track $index) {
@@ -51,9 +49,8 @@
             <div class="left-side">
                 <h4>03</h4>
                 <b>PokéDex</b>
-                <h5>What is this project about?</h5>
-                <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,
-                    assign users and categories.</p>
+                <h5>{{global.texte[global.language].whatIs}}</h5>
+                <p>{{global.texte[global.language].PokedexDescription}}</p>
                 <div class="tools">
                     @for (item of bubbleUsedTools; track $index) {
                     <div class="tool"><img src="{{item.img}} " alt="{{item.name}}">{{item.name}}</div>
@@ -68,6 +65,6 @@
                 <img src="./../../../assets/img/bubble_overlayer.png" alt="">
             </div>
         </div>
-        <div class="next-project-btn" (click)="nextProject()"><a>Next project</a> <img src="./../../../assets/img/overlayer_arrows.png" alt=""></div>
+        <div class="next-project-btn" (click)="nextProject()"><a>{{global.texte[global.language].nextProject}}</a> <img src="./../../../assets/img/overlayer_arrows.png" alt=""></div>
     </div>
 </section>

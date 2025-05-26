@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, EventEmitter, Output} from '@angular/core';
+import { Component, Input, EventEmitter, Output, inject} from '@angular/core';
+import { GlobalFunctionsService } from '../../services/global-functions.service';
 
 @Component({
   selector: 'app-overlayer',
@@ -9,7 +10,7 @@ import { Component, Input, EventEmitter, Output} from '@angular/core';
   styleUrl: './overlayer.component.scss'
 })
 export class OverlayerComponent {
-
+  global = inject(GlobalFunctionsService);
   joinUsedTools= 
   [
     {
@@ -50,17 +51,22 @@ export class OverlayerComponent {
   bubbleUsedTools = 
   [
     {
-      "name": "Anguler",
-      "img": "./../../../assets/img/angular.png"
+      "name": "Rest-API",
+      "img": "./../../../assets/img/rest-api.svg"
     },
     {
-      "name": "TypeScript",
-      "img": "./../../../assets/img/typescript.png"
+      "name": "JavaScript",
+      "img": "./../../../assets/img/java.png"
     },
     {
-      "name": "Firebase",
-      "img": "./../../../assets/img/firebase.png"
-    }];
+      "name": "HTML",
+      "img": "./../../../assets/img/html.png"
+    },
+    {
+      "name": "CSS",
+      "img": "./../../../assets/img/css.png"
+    }
+  ];
 
   displayFlex = "flex";
   displayNone= "none";
