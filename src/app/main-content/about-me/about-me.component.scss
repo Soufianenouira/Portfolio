@@ -32,7 +32,7 @@ section{
     >h3{
         color:  #3DCFB6;
         font-family: "karla";
-        font-size: clamp(10px, 2vw, 24px);
+        font-size: clamp(16px, 2vw, 24px);
         font-weight: 700;
         margin-top: 1px;
         margin-bottom: 20px;
@@ -46,14 +46,14 @@ section{
     padding: 32px;
     >b{
         color: #3DCFB6;
-        font-size: clamp(10px, 3vw, 64px);
+        font-size: clamp(16px, 3vw, 64px);
         font-family: "fira code";
         font-weight: 700;
     }
     >p{
         display: flex;
         align-items: flex-start;
-        font-size: clamp(10px, 2vw, 18px);
+        font-size: clamp(16px, 2vw, 18px);
         font-family: "karla";
         font-weight: 400;
         >img{
@@ -78,13 +78,13 @@ section{
         width: 600px;
         margin-top: 40px;
         >h3{
-            font-size: clamp(10px, 4vw, 24px);
+            font-size: clamp(16px, 4vw, 24px);
         }
     }
 
     .about-me{
         >p{
-            font-size: clamp(18px, 2vw, 18px);
+            font-size: clamp(16px, 2vw, 18px);
         }
 
         >b{

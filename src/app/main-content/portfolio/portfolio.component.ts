@@ -70,5 +70,6 @@ export class PortfolioComponent {
   showProject(projectName:string) {
     this.projectName = projectName;
     this.messageEmitter.emit(this.projectName);
+    document.body.style.overflow = 'hidden';
   }
 }

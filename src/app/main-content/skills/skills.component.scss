@@ -80,7 +80,7 @@ section{
 
 .skill-set-title{
     color: #3DCFB6;
-    font-size: clamp(10px, 4vw, 64px);
+    font-size: clamp(16px, 4vw, 64px);
     font-family: "fira code";
     font-weight: 700;
 }
@@ -125,7 +125,7 @@ section{
         >div{
             padding: 32px;
             >p{
-                font-size: clamp(10px, 4vw, 18px);
+                font-size: clamp(16px, 4vw, 18px);
             }
         }
     }
@@ -170,7 +170,7 @@ section{
         >div{
             padding: 32px;
             >p{
-                font-size: clamp(10px, 4vw, 18px);
+                font-size: clamp(16px, 4vw, 18px);
             }
         }
     }
@@ -200,7 +200,7 @@ section{
     }
     
     .skill-set-title{
-        font-size: clamp(41px, 12vw, 64px);
+        font-size: clamp(24px, 12vw, 64px);
     }
 
     .technologies{
@@ -214,7 +214,7 @@ section{
         >div{
             padding: 32px;
             >p{
-                font-size: clamp(10px, 4vw, 18px);
+                font-size: clamp(16px, 4vw, 18px);
             }
         }
     }
@@ -240,5 +240,9 @@ section{
 @media (max-width: 335px) {
     .skills-icons{
         gap: 0px 2%;
+    }
+
+    .skill-set-title{
+        font-size: clamp(20px, 10vw, 64px);
     }
 }

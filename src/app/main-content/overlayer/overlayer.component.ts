@@ -76,6 +76,7 @@ export class OverlayerComponent {
 close(){
   this.messageEmitter.emit('');
   this.projectToBeShown = '';
+  document.body.style.overflow = 'auto';
 }
 
 nextProject(){
