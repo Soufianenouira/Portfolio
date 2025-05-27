@@ -1,5 +1,5 @@
 import { CommonModule} from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild, HostListener} from '@angular/core';
 import { GlobalFunctionsService } from '../../../services/global-functions.service';
 
 
@@ -11,13 +11,20 @@ import { GlobalFunctionsService } from '../../../services/global-functions.servi
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-menuDisplay: string = 'none';
+  @ViewChild('overlayRef', { static: false }) overlayRef!: ElementRef;
+
 global = inject(GlobalFunctionsService);
-openMenu(){
-    if(this.menuDisplay == 'none'){
-      this.menuDisplay = 'flex';
-    } else{
-      this.menuDisplay = 'none';
+
+
+  @HostListener('document:click', ['$event'])
+  handleBackdropClick(event: MouseEvent) {
+    if (!this.overlayRef?.nativeElement) return;
+
+    const clickedInside = this.overlayRef.nativeElement.contains(event.target);
+    if (!clickedInside) {
+      if(this.global.menuDisplay == 'flex'){
+        this.global.openMenu();
+      }
     }
   }
 }

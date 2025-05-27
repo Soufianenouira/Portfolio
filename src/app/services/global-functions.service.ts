@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class GlobalFunctionsService {
 
   constructor() { }
-
+  menuDisplay: string = 'none';
   texte = 
 [
   {
@@ -170,4 +170,18 @@ DeEn(){
     this.impressum = this.impressumDE;
   }
 }
+
+openMenu(){
+    if(this.menuDisplay == 'none'){
+      this.menuDisplay = 'flex';
+    } else{
+      this.menuDisplay = 'none';
+    }
+  }
+
+  closeMenu(){
+    if(this.menuDisplay == 'flex'){
+      this.menuDisplay = 'none';
+    }
+  }
 }

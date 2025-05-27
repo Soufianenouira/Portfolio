@@ -15,13 +15,13 @@
                     <text class="logo-text" x="60" y="76" font-family="karla" font-size="20">NOUIRA</text>
                 </svg></a>
             </div>
-            <div class="menu-mobile">
-                <div class="burger-menu" (click)="openMenu()"><img src="/assets/img/menu.png" alt=""></div>
-                <div class="nav-mobile" [ngStyle]="{display: menuDisplay}">
-                    <img class="language-btn" (click)="global.DeEn(); openMenu()" src={{global.languageImg}} alt="">
-                    <a href="#about-me" (click)="openMenu()">{{global.texte[global.language].about}}</a>
-                    <a href="#skills" (click)="openMenu()">{{global.texte[global.language].skills}}</a>
-                    <a href="#projects" (click)="openMenu()">{{global.texte[global.language].projects}}</a>
+            <div class="menu-mobile" #overlayRef>
+                <div class="burger-menu" (click)="global.openMenu()"><img src="/assets/img/menu.png" alt=""></div>
+                <div class="nav-mobile" [ngStyle]="{display: global.menuDisplay}">
+                    <img class="language-btn" (click)="global.DeEn()" src={{global.languageImg}} alt="">
+                    <a href="#about-me" (click)="global.openMenu()">{{global.texte[global.language].about}}</a>
+                    <a href="#skills" (click)="global.openMenu()">{{global.texte[global.language].skills}}</a>
+                    <a href="#projects" (click)="global.openMenu()">{{global.texte[global.language].projects}}</a>
                 </div>
             </div>
         </nav>

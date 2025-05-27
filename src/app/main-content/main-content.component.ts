@@ -1,4 +1,4 @@
-import { Component, inject} from '@angular/core';
+import { Component, inject, HostListener, ViewChild, ElementRef} from '@angular/core';
 import { HeroComponent } from './hero/hero.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -25,7 +25,7 @@ import { GlobalFunctionsService } from '../services/global-functions.service';
 export class MainContentComponent {
   global = inject(GlobalFunctionsService);
   projectToBeShown: string = '';
-  
+  @ViewChild('overlayRef', { static: false }) overlayRef!: ElementRef;
 
   closeProjectViewer(projetName: string){
     this.projectToBeShown = projetName;
@@ -34,4 +34,16 @@ export class MainContentComponent {
   openProjectViewer(projetName: string) {
     this.projectToBeShown = projetName;
   }
+
+    @HostListener('document:click', ['$event'])
+    handleBackdropClick(event: MouseEvent) {
+      if (!this.overlayRef?.nativeElement) return;
+  
+      const clickedInside = this.overlayRef.nativeElement.contains(event.target);
+      if (!clickedInside) {
+        if(this.global.menuDisplay == 'flex'){
+        this.global.openMenu();
+      }
+      }
+    }
 }

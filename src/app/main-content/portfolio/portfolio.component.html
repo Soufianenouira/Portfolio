@@ -7,7 +7,7 @@
         <div class="projects">
             <div class="project-info">
                 @for(project of projects; track project.name; let index = $index){
-                <div class="project" (mouseover)="over(project.img, index)" (mouseout)="out()" (click)="showProject(project.name)">
+                <div class="project" (mouseover)="over(project.img, index)" (mouseout)="out()" (click)="this.global.closeMenu(); showProject(project.name)">
                     <div class="project-name">
                         @if(project.name === 'DA Bubble'){
                             <p>PokéDex</p>
