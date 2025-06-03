@@ -14,18 +14,18 @@ section{
 }
 
 .profil-img{
-    width: 45%;
+    width: 100%;
     border-radius: 30px;
-    height: 89%;
+    height: 100%;
     >img{
-        width: 100%;
+        width: 90%;
         border-radius: 30px;
         
     }
 }
 
 .who-i-am{
-    width: 45%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -72,6 +72,10 @@ section{
 
     .profil-img{
         width: 600px;
+        text-align: center;
+        >img{
+            width: 100%;
+        }
     }
 
     .who-i-am{
