@@ -20,7 +20,7 @@ export class PortfolioComponent {
       "link": "...."
     },
     {
-      "name": "El Poco Loco",
+      "name": "El Pollo Locco",
       "usedTools": ['JavaScript', 'HTML', 'CSS'],
       "img": "./../../../assets/img/pocoloco_overlayer.png",
       "link": "...."

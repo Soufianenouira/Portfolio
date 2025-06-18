@@ -81,8 +81,8 @@ close(){
 
 nextProject(){
   if(this.projectToBeShown == "Join"){
-    this.projectToBeShown = "El Poco Loco"
-  }else if(this.projectToBeShown == "El Poco Loco"){
+    this.projectToBeShown = "El Pollo Locco"
+  }else if(this.projectToBeShown == "El Pollo Locco"){
     this.projectToBeShown = "DA Bubble"
   }else if(this.projectToBeShown == "DA Bubble"){
     this.projectToBeShown = "Join"

@@ -54,6 +54,9 @@ nav {
         font-family: 'fira code', 'sans-serif';
         font-weight: 400;
         font-size: clamp(12px, 1.9vw, 20px);
+        &:hover{
+            color: #3DCFB6;
+        }
     }
 
     >img {
@@ -64,7 +67,7 @@ nav {
 
 
 .logo {
-    width: 160px;
+    width: 180px;
     height: 100px;
     margin-left: -10px;
     transition: fill 0.3s ease;
